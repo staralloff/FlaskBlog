@@ -6,14 +6,14 @@
 
 在命令行中执行下述命令：
 
-'''sh
+```sh
 $ git clone https://github.com/staralloff/FlaskBlog.git
-'''
+```
 
 ## Run
 
-'''sh
+```sh
 $ virtualenv venv
 $ source venv/bin/activate
 (venv) $ python manage.py runserver
-'''
+```
