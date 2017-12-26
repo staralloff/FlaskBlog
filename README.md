@@ -17,3 +17,10 @@ $ virtualenv venv
 $ source venv/bin/activate
 (venv) $ python manage.py runserver
 ```
+
+Linux下配置MAIL_USERNAME和MAIL_PASSWORD
+
+```sh
+(venv) $ export MAIL_USERNAME=xxx@example.com
+(venv) $ export MAIL_PASSWORD=xxxxxxxx
+```
