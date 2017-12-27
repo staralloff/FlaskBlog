@@ -24,3 +24,11 @@ Linux下配置MAIL_USERNAME和MAIL_PASSWORD
 (venv) $ export MAIL_USERNAME=xxx@example.com
 (venv) $ export MAIL_PASSWORD=xxxxxxxx
 ```
+
+数据库的更新和数据库迁移
+
+```sh
+(venv) $ python manage.py db init
+(venv) $ python manage.py db migrate -m "xxx"
+(venv) $ python manage.py db upgrade
+```
