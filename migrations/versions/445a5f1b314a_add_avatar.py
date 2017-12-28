@@ -1,8 +1,8 @@
-"""add some column in User
+"""add avatar
 
-Revision ID: 215b6cca9f63
+Revision ID: 445a5f1b314a
 Revises: 
-Create Date: 2017-12-27 16:13:53.426269
+Create Date: 2017-12-28 12:32:11.685186
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '215b6cca9f63'
+revision = '445a5f1b314a'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -39,6 +39,7 @@ def upgrade():
     sa.Column('about_me', sa.Text(), nullable=True),
     sa.Column('member_since', sa.DateTime(), nullable=True),
     sa.Column('last_seen', sa.DateTime(), nullable=True),
+    sa.Column('avatar_hash', sa.String(length=32), nullable=True),
     sa.ForeignKeyConstraint(['role_id'], ['roles.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
