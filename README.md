@@ -32,3 +32,13 @@ Linux下配置MAIL_USERNAME和MAIL_PASSWORD
 (venv) $ python manage.py db migrate -m "xxx"
 (venv) $ python manage.py db upgrade
 ```
+
+生成100条Post和User记录，并让用户自己关注自己
+
+```sh
+(venv) $ python manage.py shell
+
+>>> User.generate_fake(100)
+>>> Post.generate_fake(100)
+>>> User.add_self_follows()
+```
