@@ -4,12 +4,14 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
     SQLACHEMY_COMMIT_ON_TEARDOWN = True
-    FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
+    FLASKY_MAIL_SUBJECT_PREFIX = '[Orion]'
     FLASKY_MAIL_SENDER = 'Orion <553899789@qq.com>'
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_RECORD_QUERIES = True
     FLASKY_POSTS_PER_PAGE = 15
     FLASKY_FOLLOWERS_PER_PAGE = 25
+    FLASKY_COMMENTS_PER_PAGE = 15
     FLASKY_SLOW_DB_QUERY_TIME = 0.5
 
     @staticmethod
