@@ -2,6 +2,17 @@
 
 这是一个基于 [flask](https://github.com/pallets/flask)写的一个轻型博客框架。参考自:dog:[Flask Web开发 基于Python的Web应用开发实战](http://www.ituring.com.cn/book/1449)
 
+## Dependencies
+
+Python 2.7 least
+虚拟环境安装：
+
+```sh
+$ sudo apt-get install python-virtualenv
+```
+
+所需类库依赖及版本都在requirements.txt中
+
 ## Install
 
 在命令行中执行下述命令：
